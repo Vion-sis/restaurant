@@ -12,33 +12,52 @@ body {
   font-size: 90px;
   font-weight: 400;
 }
+.app__wrapper_info p{
+line-height: 30px;
+}
 .app__wrapper img {
   width: fit-content;
   height: 75%;
-  margin: 10px 100px;
+ 
 
-
-  --b: 8px;  /* border thickness*/
+  --b: 8px; /* border thickness*/
   --s: 60px; /* size of the corner*/
   --g: 14px; /* the gap*/
-  --c: #ffac1e; 
+  --c: #ffac1e;
 
   padding: 22px;
-  background-image:
-    conic-gradient(from  90deg at top    var(--b) left  var(--b), #0000 25%, var(--c) 0),
-    conic-gradient(from -90deg at bottom var(--b) right var(--b), #0000 25%, var(--c) 0);
-  background-position:
-    var(--_p, 0%) var(--_p, 0%),
+  background-image: conic-gradient(
+      from 90deg at top var(--b) left var(--b),
+      #0000 25%,
+      var(--c) 0
+    ),
+    conic-gradient(
+      from -90deg at bottom var(--b) right var(--b),
+      #0000 25%,
+      var(--c) 0
+    );
+  background-position: var(--_p, 0%) var(--_p, 0%),
     calc(100% - var(--_p, 0%)) calc(100% - var(--_p, 0%));
   background-size: var(--s) var(--s);
   background-repeat: no-repeat;
-  transition: 
-    background-position .3s var(--_i,.3s), 
-    background-size .3s calc(.3s - var(--_i, .3s));
+  transition: background-position 0.3s var(--_i, 0.3s),
+    background-size 0.3s calc(0.3s - var(--_i, 0.3s));
 }
 img:hover {
   background-size: calc(100% - var(--g)) calc(100% - var(--g));
   --_p: calc(var(--g) / 2);
   --_i: 0s;
+}
+.Explore-button {
+  background-color: aliceblue;
+  color: #ffac1e;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 1px solid #101010 ;
+  margin-top: 20px;
 
+}
+.Explore-button:hover{
+    background-color: #ffac1e;
+    color: #101010;
 }

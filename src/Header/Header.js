@@ -13,11 +13,13 @@ function Header() {
             <SubHeading title="Chase the new flavor" />
             <h1 className="app__header-h1">The Key to fine Dining</h1>
             <p>
-              Come dine with the best in town. We searve meals from across the
-              world with diverse-high trained chefs. Our restaurant has consistently ranked no.1 worldwide. 
-              This is where art meets best services. 
+              Come dine with the best in town. We searve meals from across the{" "}
+              <br />
+              world with diverse-high trained chefs. Our restaurant has
+              consistently <br />
+              ranked no.1 worldwide.This is where art meets best services.
             </p>
-            <button>Explore More</button>
+            <button className="Explore-button">Explore More</button>
           </div>
           <div className="app__wrapper col-6">
             <img
