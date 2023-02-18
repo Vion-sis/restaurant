@@ -1,0 +1,137 @@
+.app__navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #101010;
+  padding: 5px 30px;
+}
+.app__navbar-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.app__navbar-logo img {
+  width: 80px;
+  height: 100%;
+  margin-left: 80px;
+}
+
+.app__navbar-links {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app__navbar-links a {
+  color: aliceblue;
+  list-style: none;
+  text-decoration: none;
+}
+.app__navbar-links li {
+  list-style: none;
+  margin: 0 10px;
+
+  transition: all 150ms ease-in-out;
+}
+.app__navbar-links a:hover {
+  color: #f8a71b;
+  cursor: pointer;
+}
+
+.app__navbar-login {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.app__navbar-login a {
+  text-decoration: none;
+  color: aliceblue;
+  margin: 0 10px;
+  transition: all 150ms ease-in-out;
+}
+.app__navbar-login a:hover {
+  border-bottom: 1px solid #f8a71b;
+}
+
+.app__navbar-login div {
+  width: 1px;
+  height: 30px;
+  background-color: #f8a71b;
+}
+.app__navbar-smallscreen {
+  display: none;
+}
+
+.app__navbar-smallscreen_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #101010;
+  transition: 150ms ease-in-out;
+  flex-direction: column;
+  z-index: 5;
+}
+.app__navbar-smallscreen_overlay .overlay-content {
+  font-size: 27px;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.app__navbar-smallscreen-links {
+  list-style: none;
+  text-align: center;
+  position: relative;
+  top: 200px;
+}
+.app__navbar-smallscreen-links li {
+  margin: 20px;
+  font-size: 20px;
+  color: #f8a71b;
+}
+
+.app__navbar-smallscreen-links a {
+  text-decoration: none;
+  color: #f8a71b;
+  font-family: "Gloock", serif;
+}
+.app__navbar-smallscreen-links a:hover {
+  cursor: pointer;
+  color: aliceblue;
+  transition: all 150ms ease-in-out;
+}
+@media (max-width: 2000px) {
+    body{
+    margin: 0px;
+}
+}
+
+@media (max-width: 1150px) {
+  .app__navbar-links {
+    display: none;
+  }
+  .app__navbar-smallscreen {
+    display: flex;
+  }
+}
+@media (max-width: 650px) {
+body{
+    margin: 0px;
+}
+  .app__navbar {
+    padding: 0px 10px;
+    
+  }
+  .app__navbar-logo img {
+    margin-left: 20px;
+  }
+  .app__navbar-login {
+    display: none;
+  }
+}
