@@ -15,27 +15,27 @@ function Navbar() {
       <ul className="app__navbar-links">
         <li className="p__opensans">
           {" "}
-          <a href="#">Home</a>
+          <a href="/">Home</a>
         </li>
         <li className="p__opensans">
           {" "}
-          <a href="#">About</a>
+          <a href="/">About</a>
         </li>
         <li className="p__opensans">
           {" "}
-          <a href="#">Menu</a>
+          <a href="/">Menu</a>
         </li>
         <li className="p__opensans">
           {" "}
-          <a href="#">Awards</a>
+          <a href="/">Awards</a>
         </li>
         <li className="p__opensans">
           {" "}
-          <a href="#">Contact</a>
+          <a href="/">Contact</a>
         </li>
       </ul>
       <div className="app__navbar-login">
-        <a href="#login" className="p__opensans">
+        <a href="/login" className="p__opensans">
           LogIn / Register
         </a>
         <div />
@@ -44,7 +44,7 @@ function Navbar() {
         </a>
       </div>
       <div className="app__navbar-smallscreen">
-        <GiHamburgerMenu color="#fff" fontSize={27} onClick={() => setToggleMenu(true)} />
+        <GiHamburgerMenu color="/fff" fontSize={27} onClick={() => setToggleMenu(true)} />
 
         {toggleMenu && (
         <div className="app__navbar-smallscreen_overlay flex-center slide-bottom">
@@ -53,23 +53,23 @@ function Navbar() {
             <ul className="app__navbar-smallscreen-links">
                 <li className="p__opensans">
                     {" "}
-                    <a href="#">Home</a>
+                    <a href="/">Home</a>
                 </li>
                 <li className="p__opensans">
                     {" "}
-                    <a href="#">About</a>
+                    <a href="/">About</a>
                 </li>
                 <li className="p__opensans">
                     {" "}
-                    <a href="#">Menu</a>
+                    <a href="/">Menu</a>
                 </li>
                 <li className="p__opensans">
                     {" "}
-                    <a href="#">Awards</a>
+                    <a href="/">Awards</a>
                 </li>
                 <li className="p__opensans">
                     {" "}
-                    <a href="#">Contact</a>
+                    <a href="/">Contact</a>
                 </li>
             </ul>
         </div>

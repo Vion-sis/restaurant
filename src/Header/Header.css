@@ -1,0 +1,44 @@
+body {
+  background-color: #101010;
+}
+.app__header {
+  margin-top: 0px;
+}
+.app__header-h1 {
+  color: #ffac1e;
+  letter-spacing: 0.04ems;
+  text-transform: uppercase;
+  line-height: 117px;
+  font-size: 90px;
+  font-weight: 400;
+}
+.app__wrapper img {
+  width: fit-content;
+  height: 75%;
+  margin: 10px 100px;
+
+
+  --b: 8px;  /* border thickness*/
+  --s: 60px; /* size of the corner*/
+  --g: 14px; /* the gap*/
+  --c: #ffac1e; 
+
+  padding: 22px;
+  background-image:
+    conic-gradient(from  90deg at top    var(--b) left  var(--b), #0000 25%, var(--c) 0),
+    conic-gradient(from -90deg at bottom var(--b) right var(--b), #0000 25%, var(--c) 0);
+  background-position:
+    var(--_p, 0%) var(--_p, 0%),
+    calc(100% - var(--_p, 0%)) calc(100% - var(--_p, 0%));
+  background-size: var(--s) var(--s);
+  background-repeat: no-repeat;
+  transition: 
+    background-position .3s var(--_i,.3s), 
+    background-size .3s calc(.3s - var(--_i, .3s));
+}
+img:hover {
+  background-size: calc(100% - var(--g)) calc(100% - var(--g));
+  --_p: calc(var(--g) / 2);
+  --_i: 0s;
+
+}
