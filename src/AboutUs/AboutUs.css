@@ -9,9 +9,9 @@
   inset: 0;
 }
 .app__aboutus-overlay img {
-  width: 1000px;
+  width: 1100px;
   height: 850px;
-  
+
   align-items: center;
 }
 
@@ -47,4 +47,8 @@
 .about__us-content-ourhistory p {
   margin: 20px 0px;
   color: rgb(235, 223, 223);
+}
+.header{
+    margin-bottom: 0px ;
+    line-height: normal;
 }

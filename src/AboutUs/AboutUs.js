@@ -13,7 +13,7 @@ const AboutUs = () => {
       </div>
       <div className="about__us-content container d-flex justify-content-between">
         <div className="about__us-content-aboutus">
-          <h1>About Us</h1>
+          <h1 className="header">About Us</h1>
           <img src={mark} alt="Liceria mark" />
 
           <p>
@@ -27,7 +27,7 @@ const AboutUs = () => {
           <img src={knife} alt="kitchen knife" />
         </div>
         <div className="about__us-content-ourhistory ">
-          <h1>Our History</h1>
+          <h1 className="header">Our History</h1>
           <img src={mark} alt="Liceria mark" />
 
           <p>

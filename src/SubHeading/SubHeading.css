@@ -2,3 +2,9 @@ p {
   color: aliceblue;
 }
 
+.p__hook {
+  font-family: "Cormorant Upright", serif;
+  text-transform: capitalize;
+  font-size: 23px ;
+  margin-bottom: 0px ;
+}

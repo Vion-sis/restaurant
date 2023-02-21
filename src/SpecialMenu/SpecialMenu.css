@@ -1,0 +1,48 @@
+.munu-image img {
+  height: 400px;
+}
+.heading {
+  text-align: center;
+  margin: 100px 0px 60px 0px;
+}
+
+.menu-dash {
+  width: 120px;
+  height: 1px;
+  background-color: #ffad1f;
+  margin: 0px 20px 0px 20px;
+}
+
+.wine-menu {
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.menu-wine-name {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
+  color: #ffad1f;
+}
+.menu-items {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+
+  text-align: center;
+}
+
+.menu-title {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 50px;
+  margin-bottom: 20px;
+  color: aliceblue;
+  font-family: "Cormorant Upright", serif;
+}
